@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>_21_WhileLoops</RootNamespace>
     <AssemblyName>21-WhileLoops</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
