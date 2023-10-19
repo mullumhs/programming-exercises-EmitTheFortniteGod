@@ -36,7 +36,7 @@ namespace ProgrammingExercisesIST
             // Your code goes below here
             string name = "emit";
             Console.WriteLine("Hello " + name + "!");
-            Console.ReadLine();
+            Console.ReadLine();+
         }
     }
 }
