@@ -39,8 +39,13 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
-
-        }
+            Console.WriteLine("Type your name");
+            string name = Console.ReadLine();
+            Console.WriteLine($"hello {name}, what is your favourite game?");
+            string game = Console.ReadLine();
+            Console.WriteLine($"{game} sounds cool");
+            Console.ReadLine();
+        } 
     }
 }
 

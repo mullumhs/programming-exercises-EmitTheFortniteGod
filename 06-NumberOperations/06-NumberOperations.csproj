@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>_06_NumberOperations</RootNamespace>
     <AssemblyName>06-NumberOperations</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
