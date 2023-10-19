@@ -43,8 +43,11 @@ namespace ProgrammingExercisesIST
     {
         static void Main(string[] args)
         {
-            // Your code goes below here
-
+            int age;
+            bool 
+            age = 14;
+            Console.WriteLine("henrys age is "+age);
+            Console.ReadLine();
         }
     }
 }
