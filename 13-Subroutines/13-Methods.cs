@@ -33,10 +33,33 @@ namespace ProgrammingExercisesIST
     {
         static void Main(string[] args)
         {
+
             // Call the methods here
-            
+            sayhello();
+            Wait();
+
         }
 
+        private static void sayhello()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.WriteLine("hello world");
+            Console.ReadLine();
+       
+           
+        }
+
+        static void Wait()
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine();
+            Console.WriteLine("Press any key to continue......");
+            Console.ReadLine();
+           
+
+
+
+        }
         // Write your methods here
 
     }

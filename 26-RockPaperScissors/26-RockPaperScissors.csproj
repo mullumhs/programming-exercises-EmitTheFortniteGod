@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>_26_RockPaperScissors</RootNamespace>
     <AssemblyName>26-RockPaperScissors</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
