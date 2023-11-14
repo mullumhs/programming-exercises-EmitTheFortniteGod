@@ -13,7 +13,7 @@ namespace _36_Testing
         static void Main(string[] args)
         {
             // Write your code here
-            Console.ReadKey(emit);
+            Console.ReadKey();
 
 
 

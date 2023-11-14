@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.Remoting;
 
 /*
 ===============================================================================
@@ -47,9 +48,12 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Runs the menu and stores the choice
-            string choice = MainMenu();
+            
+
 
             // Write your code here
+
+            MainMenu();
 
 
             // Wait for key press before exiting
@@ -68,15 +72,38 @@ namespace ProgrammingExercisesIST
             return distance;
         }
 
+        
+
+
         // Shows the menu options to the user
-        private static string MainMenu()
+        private static void MainMenu()
         {
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+
             Console.Clear();
             Console.WriteLine("What would you like to do?");
             Console.WriteLine("1. Kilometres to Miles");
             Console.WriteLine("2. Miles to Kilometres");
             string choice = Console.ReadLine();
-            return choice;
+            
+
+
+
+
+            if(choice == "1")
+            {
+                Console.Write("How many kilometres? ");
+                double km = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine($"{km} kilometers to miles = {km * 0.621371}");
+            }
+
+            else if(choice == "2")
+            {
+                Console.Write("How many miles? ");
+                double miles = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine($"{miles} miles to kilometers = {miles * 1.60934}");
+            }
+
         }
 
         // Waits for the user to press any key
