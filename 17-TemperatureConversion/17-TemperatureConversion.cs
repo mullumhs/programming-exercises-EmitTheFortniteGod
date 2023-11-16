@@ -1,6 +1,4 @@
-﻿using System;
-
-/*
+﻿/*
 ===============================================================================
 PROJECT 17: TEMPERATURE CONVERSION
 ===============================================================================
@@ -35,7 +33,7 @@ Pseudocode:
         c = GetTemperature("Celsius")
         f = (c * 9/5) + 32
         RETURN f
-    END CelsiusToFahrenheit 
+    END CelsiusToFahrenheit
 
     BEGIN FahrenheitToCelsius
         f = GetTemperature("Fahrenheit")
@@ -65,6 +63,8 @@ Extension Tasks:
 ===============================================================================
 */
 
+using System;
+
 namespace ProgrammingExercisesIST
 {
     class Project_17_TemperatureConversion
@@ -73,85 +73,54 @@ namespace ProgrammingExercisesIST
         {
             // Write your code here
 
+            MainMenu();
+
+            WaitForKeyPress();
         }
-    }
-}
-static void Main(string[] args)
-{
+
+
+        private static void MainMenu()
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            Console.Clear();
+            Console.WriteLine("What would you like to do?");
+            Console.WriteLine("1. Fahrenheit to Celsius");
+            Console.WriteLine("2. Celsius to Fahrenheit");
+            string choice = Console.ReadLine();
 
 
 
 
-    // Write your code here
+            if (choice == "1")
+            {
+                Console.Write("How many fahrenheit? ");
+                double fr = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine($"{fr} fahrenheit to celsius = {(fr - 32) * 5 / 9}");
+            }
 
-    MainMenu();
+            else if (choice == "2")
+            {
+                Console.Write("How many celsius? ");
+                double cel = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine($"{cel} celsius to fahrenheit = {(cel * 9 / 5) + 32}");
+            }
 
+            else
+            {
+                Console.WriteLine($"{choice} is not a valid answer.");
+            }
+        }
 
-    // Wait for key press before exiting
-    WaitForKeyPress();
-}
-
-// Create your functions here
-
-
-
-// Asks the user to enter a distance in the unit specified
-private static double GetDistance(string unit)
-{
-    Console.Write($"Enter distance (in {unit}) to convert: ");
-    double distance = int.Parse(Console.ReadLine());
-    return distance;
-}
-
-
-
-
-// Shows the menu options to the user
-private static void MainMenu()
-{
-    Console.ForegroundColor = ConsoleColor.DarkYellow;
-
-    Console.Clear();
-    Console.WriteLine("What would you like to do?");
-    Console.WriteLine("1. Kilometres to Miles");
-    Console.WriteLine("2. Miles to Kilometres");
-    string choice = Console.ReadLine();
+        // Waits for the user to press any key
+        private static void WaitForKeyPress()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+        }
 
 
-
-
-
-    if (choice == "1")
-    {
-        Console.Write("How many kilometres? ");
-        double km = Convert.ToDouble(Console.ReadLine());
-        Console.WriteLine($"{km} kilometers to miles = {km * 0.621371}");
-    }
-
-    else if (choice == "2")
-    {
-        Console.Write("How many miles? ");
-        double miles = Convert.ToDouble(Console.ReadLine());
-        Console.WriteLine($"{miles} miles to kilometers = {miles * 1.60934}");
-    }
-
-}
-
-// Waits for the user to press any key
-private static void WaitForKeyPress()
-{
-    Console.WriteLine();
-    Console.WriteLine("Press any key to continue...");
-    Console.ReadKey();
-}
-
-// Displays an error message in red text
-private static void ErrorMessage(string message)
-{
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.WriteLine(message);
-    Console.ForegroundColor = ConsoleColor.White;
-}
     }
 }
 
